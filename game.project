@@ -10,6 +10,9 @@ height = 640
 
 [android]
 input_method = HiddenInputField
+version_code = 0
+immersive_mode = 1
+display_cutout = 0
 
 [project]
 title = my-template
