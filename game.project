@@ -19,3 +19,6 @@ title = my-template
 developer = BroMandarin
 version = 0.0
 
+[label]
+subpixels = 0
+
