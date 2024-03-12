@@ -5,12 +5,31 @@ main_collection = /main/main.collectionc
 shared_state = 1
 
 [display]
-width = 960
-height = 640
+width = 320
+height = 180
 
 [android]
 input_method = HiddenInputField
+version_code = 0
+immersive_mode = 1
+display_cutout = 0
 
 [project]
 title = my-template
+developer = BroMandarin
+version = 0.0
+
+[label]
+subpixels = 0
+
+[sprite]
+subpixels = 0
+
+[graphics]
+default_texture_min_filter = nearest
+default_texture_mag_filter = nearest
+
+[input]
+game_binding = /input/all.input_bindingc
+use_accelerometer = 0
 
