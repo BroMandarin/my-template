@@ -13,4 +13,6 @@ input_method = HiddenInputField
 
 [project]
 title = my-template
+developer = BroMandarin
+version = 0.0
 
