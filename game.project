@@ -22,3 +22,6 @@ version = 0.0
 [label]
 subpixels = 0
 
+[sprite]
+subpixels = 0
+
