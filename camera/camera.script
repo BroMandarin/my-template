@@ -1,0 +1,19 @@
+local PROJECT_WIDTH = 320
+local PROJECT_HEIGHT = 180
+local ZOOM = 1
+local SCALE = 3
+
+local function window_callback(self, event, data)
+	if event == window.WINDOW_EVENT_RESIZED then
+		go.set("#camera", "orthographic_zoom", (data.height / PROJECT_HEIGHT) * ZOOM)
+	end
+end
+
+function init(self)
+	msg.post("#camera", "acquire_camera_focus")
+	msg.post("@render:", "use_camera_projection")
+
+	msg.post("@render:", "resize", { width = PROJECT_WIDTH * SCALE, height = PROJECT_HEIGHT * SCALE })
+
+	window.set_listener(window_callback)
+end
