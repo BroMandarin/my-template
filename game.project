@@ -33,3 +33,6 @@ default_texture_mag_filter = nearest
 game_binding = /input/all.input_bindingc
 use_accelerometer = 0
 
+[physics]
+use_fixed_timestep = 1
+
